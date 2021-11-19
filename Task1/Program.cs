@@ -10,8 +10,8 @@ namespace Task1
             try
             {
                 ICalculator calc = new Calculator();
-                int result = calc.Addition(Convert.ToInt32(Console.ReadLine()), 
-                              Convert.ToInt32(Console.ReadLine()));
+                int result = calc.Addition(Convert.ToInt32(Console.ReadLine()),
+                    Convert.ToInt32(Console.ReadLine()));
                 Console.WriteLine($"Результат: {result}");
             }
             catch (Exception e)
@@ -26,7 +26,7 @@ namespace Task1
         int Addition(int a, int b);
     }
 
-    class Calculator:ICalculator
+    class Calculator : ICalculator
     {
         public int Addition(int a, int b)
         {
